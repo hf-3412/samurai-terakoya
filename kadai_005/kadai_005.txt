@@ -1,0 +1,51 @@
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt> cd C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt             
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/12/08     14:54                git_challenge
+
+
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt> cd C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> echo "Hello_world!" > hello_world.txt
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> git add hello_world.txt
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> git commit -m "1st commit hello_world.txt"
+[main a5b5ac2] 1st commit hello_world.txt
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git_challenge/hello_world.txt
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+        modified:   ../git_tutorial/practice.txt
+        modified:   ../move_test/projyect.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> git add hello_world.txt
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../git_tutorial/practice.txt
+        modified:   ../move_test/projyect.md
+
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> git commit -m "2nd commit hello_world.txt"
+[main b5ef455] 2nd commit hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> git logoneline
+git: 'logoneline' is not a git command. See 'git --help'.
+PS C:\Users\imosa\OneDrive\自習用\SAMURAI\GIt\git_challenge> git log --oneline
+b5ef455 (HEAD -> main) 2nd commit hello_world.txt
+a5b5ac2 1st commit hello_world.txt
